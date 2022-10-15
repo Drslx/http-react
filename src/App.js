@@ -22,6 +22,7 @@ function App() {
     fetchData();
   }, []);
 
+  // 2 - Submit data
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -33,11 +34,14 @@ function App() {
     const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(product)
+      body: JSON.stringify(product),
     });
+    // 3 - Loading dynamic
+    const addedProduct = await res.json();
+    setProducts((prevProducts) => [...prevProducts, addedProduct]);
 
-
-    
+    setName("");
+    setPrice("");
   };
 
   return (
