@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 
-import { useState, useEfect } from "react";
+import { useState, useEffect } from "react";
 
 const url = "http://localhost:3000/products";
 
@@ -9,17 +8,30 @@ function App() {
   const [products, setProducts] = useState([]);
 
   // 1 - Get data
-  useState(() => {
-    
-  });
+  useEffect(() => {
+    async function fetchData() {
+      const res = await fetch(url);
+      const data = await res.json();
 
+      setProducts(data);
+    }
+
+    fetchData();
+  }, []);
+
+  console.log(products);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-
       <h1>Lista de Produtos</h1>
+
+      <ul>
+        {products.map((product) => (
+          <li key={product.id}>
+            {" "}
+            {product.name} - {product.price}{" "}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
