@@ -12,7 +12,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   // 4 - Custom hooks
-  const { data: items, httpConfig, loading} = useFetch(url);
+  const { data: items, httpConfig, loading } = useFetch(url);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -91,7 +91,9 @@ function App() {
             />
           </label>
 
-          <input type="submit" value="Criar" />
+          {/* 7 - State loading in post */}
+          {loading && <input type="submit" disabled value="Aguarde" />}
+          {!loading && <input type="submit" value="Criar" />}
         </form>
       </div>
     </div>

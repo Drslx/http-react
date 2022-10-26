@@ -22,11 +22,11 @@
     },
     {
       "name": "a",
-      "price": "3",
+      "price": "1",
       "id": 5
     },
     {
-      "name": "a",
+      "name": "b",
       "price": "2",
       "id": 6
     }
