@@ -16,9 +16,19 @@
       "price": 29.9
     },
     {
-      "name": "camisa preta",
-      "price": "24.9",
+      "name": "Mouse",
+      "price": "300",
       "id": 4
+    },
+    {
+      "name": "a",
+      "price": "3",
+      "id": 5
+    },
+    {
+      "name": "a",
+      "price": "2",
+      "id": 6
     }
   ]
 }
