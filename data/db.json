@@ -4,31 +4,6 @@
       "id": 1,
       "name": "Camisa",
       "price": 59.9
-    },
-    {
-      "id": 2,
-      "name": "Calça vermelha",
-      "price": 90
-    },
-    {
-      "id": 3,
-      "name": "Bone aba reta",
-      "price": 29.9
-    },
-    {
-      "name": "Mouse",
-      "price": "300",
-      "id": 4
-    },
-    {
-      "name": "a",
-      "price": "1",
-      "id": 5
-    },
-    {
-      "name": "b",
-      "price": "2",
-      "id": 6
     }
   ]
 }

@@ -15,3 +15,8 @@ form input{
     margin-bottom: 15px;
     text-transform: capitalize;
 }
+
+.btn-delete{
+  margin-left: 10px;
+ 
+}
