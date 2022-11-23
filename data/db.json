@@ -4,6 +4,21 @@
       "id": 1,
       "name": "Camisa",
       "price": 59.9
+    },
+    {
+      "name": "Terça",
+      "price": "22",
+      "id": 2
+    },
+    {
+      "name": "terça",
+      "price": "22",
+      "id": 3
+    },
+    {
+      "name": "ter",
+      "price": "2",
+      "id": 4
     }
   ]
 }
